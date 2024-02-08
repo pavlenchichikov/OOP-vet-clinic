@@ -1,4 +1,4 @@
-package main;
+package main.Animals;
 
 public class Owner {
     String Fullname;

@@ -1,8 +1,8 @@
-package main;
+package main.Animals;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Goable, Huntable {
 
     Double discont;
     public Cat(String nickname, Owner owner, LocalDate birthDate, Illness ilness, Double discount) {
@@ -13,6 +13,11 @@ public class Cat extends Animal {
     public Cat() {
         super();
         this.discont = 100.0;
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("Кот ест");
     }
 
     public Double getDiscont() {
@@ -31,7 +36,16 @@ public class Cat extends Animal {
         System.out.println("мяу!");
     }
 
+    @Override
+    public void go() {
 
+    }
+
+
+    @Override
+    public double getRunSpeed() {
+        return Goable.super.getRunSpeed();
+    }
 }
 
 
