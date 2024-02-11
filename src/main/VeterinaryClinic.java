@@ -13,7 +13,6 @@ public class VeterinaryClinic {
     public static void main(String[] args){
 
 
-
         Doctor doctor = new Doctor();
         Nurse nurse = new Nurse();
         Janitor janitor = new Janitor();
@@ -38,8 +37,10 @@ public class VeterinaryClinic {
 
         Cat cat = new Cat();
         Cat cat2 = new Cat();
+        Dog dog = new Dog();
         list.add(cat);
         list.add(cat2);
+        list.add(dog);
 
         System.out.println("Численность пациентов: " + list.size());
         System.out.println(list);
