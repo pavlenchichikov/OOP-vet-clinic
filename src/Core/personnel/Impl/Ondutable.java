@@ -1,4 +1,4 @@
-package Core.Personnel.Impl;
+package Core.personnel.Impl;
 
 public interface Ondutable {
     void Watch();

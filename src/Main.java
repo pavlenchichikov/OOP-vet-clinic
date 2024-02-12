@@ -1,49 +1,33 @@
-import Core.Clients.*;
-import Core.Patients.*;
-import Core.Patients.Impl.Cat;
-import Core.Patients.Impl.Dog;
-import Core.Patients.Impl.Duck;
-import Core.Patients.Impl.Fish;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import Core.patients.*;
+import Core.personnel.Impl.Doctor;
+import Core.VeterinaryClinic;
 
 public class Main {
     public static void main (String[] args) {
-            Animal cat = new Cat("Бакс", new Owner("Андрей Геннадьевич"),
-                    LocalDate.of(2024, 11, 25), new Illness("Лишай") ,10.0); // Создаем экземпляр класса
-           // System.out.println(cat.getNickname());
-            //System.out.println(cat.getBirthDate());
-            //System.out.println(cat.getOwner());
-            //cat.setIllness(new Illness("Здоров"));
+
+            VeterinaryClinic clinic = new VeterinaryClinic();
+            System.out.println(clinic.getPatients());
+            System.out.println(clinic.getPersonnel());
+
+            Doctor doctor = new Doctor();
+            clinic.hireEmployee(doctor);
+            Animal patient1 = new Animal("Шелли");
+            Animal catty = new Animal("Мурка");
+            Animal ducky = new Animal ("Ути");
+            clinic.addPatients(catty);
+            clinic.addPatients(ducky);
+            clinic.addPatients(patient1);
 
 
-
-            Animal catty = new Cat();
-            Dog goodboy = new Dog();
-
-            System.out.println(cat.getType());
-            System.out.println(cat);
-            Cat.meow();
-
-
-            List<Animal> animals = new ArrayList<Animal>();
-
-            animals.add(catty);
-            animals.add(goodboy);
-            animals.add(cat);
-
-            Fish fishy = new Fish("Жора", new Owner("Павел Андреевич"),
-                    LocalDate.of(2024, 10, 21), new Illness("Плавниковая гниль"));
-
-
-
-            Duck ducky = new Duck ("Ути", new Owner("Геннадий Юрьевич"),
-                    LocalDate.of(2020, 11, 22), new Illness("глисты"));
-
-
-
+            System.out.println(clinic.getPatients());
+            System.out.println(clinic.getPersonnel());
+            System.out.println(clinic.getGoables());
+            System.out.println(clinic.getPersonnel());
+            System.out.println(clinic.getPatients());
+            System.out.println(doctor.doDiagnose(patient1));
+            System.out.println(clinic.getGoables()); // Вывожу всех бегающих
+            System.out.println(clinic.getFlyables()); // Вывожу всех летающих
+            System.out.println(clinic.getSwimmables());// Вывожу всех плавающих
 
     }
 

@@ -1,8 +1,8 @@
-package Core.Patients.Impl;
+package Core.patients.Impl;
 
-import Core.Clients.Owner;
-import Core.Patients.Animal;
-import Core.Patients.Illness;
+import Core.clients.Owner;
+import Core.patients.Animal;
+import Core.patients.Illness;
 
 import java.time.LocalDate;
 
@@ -17,12 +17,10 @@ public class Cat extends Animal implements Goable, Huntable {
     public Cat() {
         super();
         this.discont = 100.0;
+
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Кот ест");
-    }
+
 
     public Double getDiscont() {
         return discont;

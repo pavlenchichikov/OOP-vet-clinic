@@ -1,4 +1,4 @@
-package Core.Patients.Impl;
+package Core.patients.Impl;
 
 public interface Goable {
     void go();

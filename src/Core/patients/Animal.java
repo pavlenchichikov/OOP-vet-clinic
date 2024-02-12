@@ -1,10 +1,15 @@
-package Core.Patients;
+package Core.patients;
 
-import Core.Clients.Owner;
+import Core.clients.Owner;
 
 import java.time.LocalDate;
 
-public abstract class Animal {
+public class Animal {
+    public String name;
+
+    public Animal(String name) {
+        this.name = name;
+    }
 
     // protected видно в классе и во всех наследниках
     protected static String nickName;
@@ -57,7 +62,7 @@ public abstract class Animal {
     private void hunt() {
         System.out.println("Животное " + nickName + " охотится!");
     }
-    public abstract void eat();
+
 
     private void sleep() {
         System.out.println("Животное " + nickName + " уснуло!");

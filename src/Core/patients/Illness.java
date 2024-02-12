@@ -1,4 +1,4 @@
-package Core.Patients;
+package Core.patients;
 
 public class Illness {
     String Title;

@@ -1,6 +1,6 @@
-package Core.Personnel.Impl;
+package Core.personnel.Impl;
 
-import Core.Personnel.Personnel;
+import Core.personnel.Personnel;
 
 public class Janitor extends Personnel implements Cleanable, Ondutable {
 

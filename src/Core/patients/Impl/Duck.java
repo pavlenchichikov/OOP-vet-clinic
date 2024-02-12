@@ -1,7 +1,7 @@
-package Core.Patients.Impl;
+package Core.patients.Impl;
 
-import Core.Clients.Owner;
-import Core.Patients.*;
+import Core.clients.Owner;
+import Core.patients.*;
 
 import java.time.LocalDate;
 
@@ -10,10 +10,7 @@ public class Duck extends Animal implements Swimmable, Flyable, Goable {
         super(nickname, owner, birthDate, ilness);
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Утка ест");
-    }
+
 
 
     @Override

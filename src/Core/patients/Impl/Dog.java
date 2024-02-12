@@ -1,7 +1,7 @@
-package Core.Patients.Impl;
+package Core.patients.Impl;
 
-import Core.Clients.Owner;
-import Core.Patients.*;
+import Core.clients.Owner;
+import Core.patients.*;
 
 import java.time.LocalDate;
 
@@ -14,18 +14,17 @@ public class Dog extends Animal implements Goable, Swimmable, Huntable {
         super();
     }
 
-    @Override
-    public void eat() {
-        System.out.println("Собака ест");
-    }
+
 
     @Override
     public void go() {
+        System.out.println("Собака бежит");
 
     }
 
     @Override
     public void swim() {
+        System.out.println("Собака плывет");
 
     }
 }

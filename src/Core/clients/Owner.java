@@ -1,4 +1,4 @@
-package Core.Clients;
+package Core.clients;
 
 public class Owner {
     String Fullname;

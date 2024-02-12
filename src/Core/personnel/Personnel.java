@@ -1,7 +1,7 @@
-package Core.Personnel;
+package Core.personnel;
 
 import java.time.LocalDate;
-public abstract class Personnel {
+public class Personnel {
 
         public String name;
         public LocalDate birthDate;
@@ -35,3 +35,4 @@ public abstract class Personnel {
         }
 
 }
+
