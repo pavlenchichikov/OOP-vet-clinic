@@ -1,9 +1,7 @@
-package main.Animals;
-
-import main.Animals.Animal;
-import main.Animals.Cat;
-import main.Animals.Dog;
-import main.Animals.Goable;
+import Core.Patients.Animal;
+import Core.Patients.Impl.Cat;
+import Core.Patients.Impl.Dog;
+import Core.Patients.Impl.Goable;
 
 import java.util.ArrayList;
 import java.util.List;

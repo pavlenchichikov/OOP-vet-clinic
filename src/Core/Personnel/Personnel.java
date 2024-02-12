@@ -1,6 +1,4 @@
-package main.Personnel;
-import main.Animals.Illness;
-import main.Animals.Owner;
+package Core.Personnel;
 
 import java.time.LocalDate;
 public abstract class Personnel {

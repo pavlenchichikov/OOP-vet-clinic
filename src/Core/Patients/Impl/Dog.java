@@ -1,4 +1,7 @@
-package main.Animals;
+package Core.Patients.Impl;
+
+import Core.Clients.Owner;
+import Core.Patients.*;
 
 import java.time.LocalDate;
 

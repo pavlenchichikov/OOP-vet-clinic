@@ -1,4 +1,4 @@
-package main.Animals;
+package Core.Patients.Impl;
 
 public interface Flyable {
     void fly();

@@ -1,4 +1,4 @@
-package main.Animals;
+package Core.Patients;
 
 public class Illness {
     String Title;

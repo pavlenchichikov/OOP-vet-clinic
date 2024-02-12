@@ -1,6 +1,9 @@
-package main.Animals;
-
-import main.Animals.*;
+import Core.Clients.*;
+import Core.Patients.*;
+import Core.Patients.Impl.Cat;
+import Core.Patients.Impl.Dog;
+import Core.Patients.Impl.Duck;
+import Core.Patients.Impl.Fish;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

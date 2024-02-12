@@ -1,6 +1,8 @@
-package main.Personnel;
+package Core.Personnel.Impl;
 
-public class Nurse extends Personnel implements Curable, Cleanable, Assistable, Ondutable{
+import Core.Personnel.Personnel;
+
+public class Nurse extends Personnel implements Curable, Cleanable, Assistable, Ondutable {
     @Override
     public void help() {
 

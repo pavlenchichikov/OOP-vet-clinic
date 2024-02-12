@@ -1,9 +1,13 @@
-package main;
+package Core;
 
-import main.Animals.*;
-import main.Personnel.*;
+import Core.Patients.Impl.Cat;
+import Core.Patients.Impl.Dog;
+import Core.Patients.Impl.Goable;
+import Core.Personnel.Impl.Doctor;
+import Core.Personnel.Impl.Janitor;
+import Core.Personnel.Impl.Nurse;
+import Core.Personnel.Personnel;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
